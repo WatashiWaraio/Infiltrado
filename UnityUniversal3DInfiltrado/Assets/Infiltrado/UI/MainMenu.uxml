@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="MainMenu.uss" />
+    <ui:VisualElement name="screen">
+        <ui:VisualElement class="shade" picking-mode="Ignore" />
+        <ui:VisualElement class="topbar">
+            <ui:Label text="◈  /  INFILTRADO" class="brand" />
+            <ui:Label text="ACCESO RESTRINGIDO     /     PROTOCOLO 01" class="micro muted" />
+            <ui:Label text="●  SISTEMA EN LÍNEA" class="micro cyan" />
+        </ui:VisualElement>
+        <ui:VisualElement name="menu">
+            <ui:Label text="01   /   INGENIERÍA DEL ENGAÑO" class="eyebrow" />
+            <ui:Label text="INFILTRADO" class="title" />
+            <ui:VisualElement class="title-rule" />
+            <ui:Label text="Nadie es quien dice ser." class="tagline" />
+            <ui:Label text="Entra en la red. Descubre la amenaza.\nDecide en quién confiar." class="description" />
+            <ui:VisualElement class="navigation">
+                <ui:Button name="start" text="INICIAR INFILTRACIÓN                         ↗" class="primary" />
+                <ui:Button name="settings" text="01    CONFIGURACIÓN                         +" class="secondary" />
+                <ui:Button name="credits" text="02    ARCHIVO / CRÉDITOS                     +" class="secondary" />
+                <ui:Button name="exit" text="03    DESCONECTAR                           ↗" class="secondary muted-button" />
+            </ui:VisualElement>
+            <ui:Label text="NO NECESITAS FUERZA. NECESITAS UNA BRECHA." class="micro motto" />
+        </ui:VisualElement>
+        <ui:VisualElement name="subject">
+            <ui:Label text="[ SUJETO VERIFICADO ]" class="micro cyan" />
+            <ui:Label text="A D A M" class="subject-name" />
+            <ui:Label name="telemetry" text="ADAM_01  /  OPERATIVO" class="telemetry" />
+        </ui:VisualElement>
+        <ui:VisualElement name="intro">
+            <ui:Label text="ESTABLECIENDO ENLACE" class="eyebrow" />
+            <ui:Label text="Toda red tiene\nuna puerta de entrada." class="intro-title" />
+            <ui:Button name="skip" text="OMITIR SECUENCIA  /  ESPACIO  →" class="skip" />
+        </ui:VisualElement>
+        <ui:VisualElement class="footer">
+            <ui:Label name="connection" text="INICIANDO PROTOCOLO DE ACCESO..." class="micro cyan" />
+            <ui:VisualElement class="progress"><ui:VisualElement name="progress-fill" /></ui:VisualElement>
+            <ui:Label text="CYBERSECURITY EXPERIENCE     /     V.0.1" class="micro muted" />
+        </ui:VisualElement>
+        <ui:VisualElement name="modal">
+            <ui:VisualElement class="dialog">
+                <ui:Label text="INFILTRADO   /   TERMINAL SEGURA" class="eyebrow" />
+                <ui:Label name="modal-title" class="dialog-title" />
+                <ui:Label name="modal-body" class="dialog-body" />
+                <ui:VisualElement name="settings-fields">
+                    <ui:Slider name="volume" label="Volumen de interfaz" low-value="0" high-value="1" />
+                    <ui:Toggle name="motion" label="Reducir movimiento / omitir introducción" />
+                </ui:VisualElement>
+                <ui:Button name="continue" class="primary" />
+                <ui:Button name="close" text="←  VOLVER" class="secondary" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="fade" picking-mode="Ignore" />
+    </ui:VisualElement>
+</ui:UXML>
